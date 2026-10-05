@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokok Kelapa - ADIRUL Pertanian</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo-link">
+        <img src="images/logo.svg" alt="ADIRUL Logo" class="brand-logo-img">
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="pertanian.html" class="nav-link active">PERTANIAN</a></li>
+          <li><a href="penternakan.html" class="nav-link">PENTERNAKAN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Back Button -->
+      <div style="margin-bottom: 2rem;">
+        <a href="pertanian.html" class="back-button">← KEMBALI KE PERTANIAN</a>
+      </div>
+
+      <!-- Detail Hero Section -->
+      <section class="detail-hero">
+        <div class="detail-hero-image">
+          <img src="images/pokok-kelapa.jpg" alt="Pokok Kelapa">
+        </div>
+        <div class="detail-hero-content">
+          <h1 class="detail-title">POKOK KELAPA</h1>
+          <p class="detail-intro">
+            Pokok Kelapa Pandan dan Matag keluaran ADIRUL terbukti mengeluarkan buah seawal 3 tahun. Sangat popular kerana airnya yang wangi, manis, dan nilai pasaran yang amat tinggi.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3 Information Cards Section -->
+      <section class="detail-info-grid">
+
+        <!-- CARD 1: HARGA -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🏷️</div>
+            <h2 class="info-card-title">HARGA</h2>
+          </div>
+          <div class="price-tag">RM 40.00</div>
+          <div class="price-unit">per benih pokok dalam polibeg</div>
+          <ul class="info-list" style="margin-top: 1.5rem;">
+            <li class="info-list-item">Benih asli sah tulen berdaftar</li>
+            <li class="info-list-item">Tahan serangan penyakit reput pucuk</li>
+            <li class="info-list-item">Perkhidmatan nasihat ladang dan penanaman percuma</li>
+          </ul>
+        </div>
+
+        <!-- CARD 2: PENJAGAAN -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🌱</div>
+            <h2 class="info-card-title">PENJAGAAN</h2>
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item"><strong>Penyiraman:</strong> Siraman konsisten terutamanya pada 6 bulan pertama selepas ditanam.</li>
+            <li class="info-list-item"><strong>Pembajaan:</strong> Baja NPK Blue khas kelapa serta garam bukit untuk kemanisan air.</li>
+            <li class="info-list-item"><strong>Cahaya Matahari:</strong> Cahaya matahari terik sepanjang hari (pendedahan 100%).</li>
+            <li class="info-list-item"><strong>Kebersihan Pangkal:</strong> Pastikan kawasan pangkal pokok bebas daripada semak samun.</li>
+          </ul>
+        </div>
+
+        <!-- CARD 3: KAWASAN -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🗺️</div>
+            <h2 class="info-card-title">KAWASAN</h2>
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item"><strong>Lokasi Sesuai:</strong> Kawasan pesisir pantai, ladang tanah rata, dan persekitaran rumah.</li>
+            <li class="info-list-item"><strong>Jenis Tanah:</strong> Tanah aluvium, tanah berpasir, serta tanah gambut cetek.</li>
+            <li class="info-list-item"><strong>Suhu & Cuaca:</strong> Iklim panas dan lembap sepanjang tahun (26°C - 34°C).</li>
+            <li class="info-list-item"><strong>Jarak Tanaman:</strong> Jarak disyorkan 6m x 6m atau 7m x 7m mengikut susunan bertiga.</li>
+          </ul>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">ADIRUL</div>
+      <div class="footer-tagline">PERTANIAN & PENTERNAKAN</div>
+      <div class="footer-copyright">
+        © 2026 ADIRUL. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penternakan Ayam - ADIRUL Penternakan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo-link">
+        <img src="images/logo.svg" alt="ADIRUL Logo" class="brand-logo-img">
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="pertanian.html" class="nav-link">PERTANIAN</a></li>
+          <li><a href="penternakan.html" class="nav-link active">PENTERNAKAN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Back Button -->
+      <div style="margin-bottom: 2rem;">
+        <a href="penternakan.html" class="back-button">← KEMBALI KE PENTERNAKAN</a>
+      </div>
+
+      <!-- Detail Hero Section -->
+      <section class="detail-hero">
+        <div class="detail-hero-image">
+          <img src="images/penternakan-ayam.jpg" alt="Penternakan Ayam">
+        </div>
+        <div class="detail-hero-content">
+          <h1 class="detail-title">PENTERNAKAN AYAM</h1>
+          <p class="detail-intro">
+            Ayam Kampung dan Ayam Penelur ADIRUL diternak menggunakan kaedah separa bebas yang mesra alam. Menghasilkan daging berserat halus yang manis serta telur organik berprotein tinggi.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3 Information Cards Section -->
+      <section class="detail-info-grid">
+
+        <!-- CARD 1: HARGA -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🏷️</div>
+            <h2 class="info-card-title">HARGA</h2>
+          </div>
+          <div class="price-tag">RM 22.00</div>
+          <div class="price-unit">per kg (Ayam Hidup / Siap Diproses)</div>
+          <ul class="info-list" style="margin-top: 1.5rem;">
+            <li class="info-list-item">Anak ayam (DOC): RM 4.50 seekor</li>
+            <li class="info-list-item">Ayam Kampung Matang (1.5kg - 2.0kg): RM 32.00 seekor</li>
+            <li class="info-list-item">Diskaun pembelian borong untuk katering & pemborong</li>
+          </ul>
+        </div>
+
+        <!-- CARD 2: PENJAGAAN -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🩺</div>
+            <h2 class="info-card-title">PENJAGAAN</h2>
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item"><strong>Makanan:</strong> Dedak berprotein tinggi dikombinasikan dengan jagung hancur dan herba semula jadi.</li>
+            <li class="info-list-item"><strong>Minuman:</strong> Bekalan air bersih bertapis dicampur vitamin dan probiotik harian.</li>
+            <li class="info-list-item"><strong>Kebersihan:</strong> Reban dibersihkan 2 kali seminggu; penyemburan disinfektan berkala.</li>
+            <li class="info-list-item"><strong>Kesihatan:</strong> Suntikan vaksin Newcastle Disease (ND) & Infectious Bronchitis (IB) teratur.</li>
+          </ul>
+        </div>
+
+        <!-- CARD 3: KAWASAN -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🏡</div>
+            <h2 class="info-card-title">KAWASAN</h2>
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item"><strong>Lokasi Reban:</strong> Reban tertutup berudara segar dengan pencahayaan semula jadi yang mencukupi.</li>
+            <li class="info-list-item"><strong>Keperluan Ruang:</strong> 1 meter persegi untuk 8-10 ekor ayam dewasa.</li>
+            <li class="info-list-item"><strong>Suhu & Kelembapan:</strong> Suhu reban optiim 24°C - 30°C dengan saliran udara lancar.</li>
+            <li class="info-list-item"><strong>Persekitaran:</strong> Kawasan luar reban bertarahan tanah kering berumput untuk riadah ayam.</li>
+          </ul>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">ADIRUL</div>
+      <div class="footer-tagline">PERTANIAN & PENTERNAKAN</div>
+      <div class="footer-copyright">
+        © 2026 ADIRUL. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

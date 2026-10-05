@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF0A6" />
+      <stop offset="30%" stop-color="#E5C158" />
+      <stop offset="70%" stop-color="#C59B27" />
+      <stop offset="100%" stop-color="#F3E5AB" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D5A27" />
+      <stop offset="100%" stop-color="#0F2818" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Logo Mark -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Shield / Circle with Gold Border -->
+    <circle cx="50" cy="50" r="46" fill="url(#greenGrad)" stroke="url(#goldGrad)" stroke-width="3.5" filter="url(#shadow)" />
+    <circle cx="50" cy="50" r="41" fill="none" stroke="#D4AF37" stroke-width="1" stroke-dasharray="3,2" opacity="0.7"/>
+
+    <!-- Sprout / Leaves (Agriculture) -->
+    <path d="M50 78 C 30 65 25 45 35 28 C 45 42 48 58 50 78 Z" fill="url(#goldGrad)" />
+    <path d="M50 78 C 70 65 75 45 65 28 C 55 42 52 58 50 78 Z" fill="#66BB6A" />
+    <path d="M50 78 C 50 50 42 35 28 22 C 40 22 50 35 50 78 Z" fill="url(#goldGrad)" opacity="0.9"/>
+
+    <!-- Livestock Horns / Sun Ring Arc -->
+    <path d="M22 46 C 26 32 38 22 50 22 C 62 22 74 32 78 46 C 72 38 62 30 50 30 C 38 30 28 38 22 46 Z" fill="url(#goldGrad)" />
+
+    <!-- Central Star Accent -->
+    <polygon points="50,15 52,20 57,20 53,23 55,28 50,25 45,28 47,23 43,20 48,20" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Typography -->
+  <!-- Main Title: ADIRUL -->
+  <text x="125" y="65" font-family="'Cinzel', 'Trajan Pro', 'Georgia', serif" font-size="44" font-weight="800" fill="#FFFFFF" letter-spacing="4" filter="url(#shadow)">ADIRUL</text>
+  <!-- Gold Divider Line -->
+  <line x1="125" y1="76" x2="470" y2="76" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" />
+  <circle cx="125" cy="76" r="3" fill="#D4AF37" />
+  <circle cx="470" cy="76" r="3" fill="#D4AF37" />
+
+  <!-- Subtitle: PERTANIAN & PENTERNAKAN -->
+  <text x="126" y="96" font-family="'Plus Jakarta Sans', 'Montserrat', 'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#E5C158" letter-spacing="3.5">PERTANIAN &amp; PENTERNAKAN</text>
+</svg>

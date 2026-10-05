@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penternakan Kambing - ADIRUL Penternakan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo-link">
+        <img src="images/logo.svg" alt="ADIRUL Logo" class="brand-logo-img">
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="pertanian.html" class="nav-link">PERTANIAN</a></li>
+          <li><a href="penternakan.html" class="nav-link active">PENTERNAKAN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Back Button -->
+      <div style="margin-bottom: 2rem;">
+        <a href="penternakan.html" class="back-button">← KEMBALI KE PENTERNAKAN</a>
+      </div>
+
+      <!-- Detail Hero Section -->
+      <section class="detail-hero">
+        <div class="detail-hero-image">
+          <img src="images/penternakan-kambing.jpg" alt="Penternakan Kambing">
+        </div>
+        <div class="detail-hero-content">
+          <h1 class="detail-title">PENTERNAKAN KAMBING</h1>
+          <p class="detail-intro">
+            Kambing baka Boer, Jamnapari, dan Biri-Biri ADIRUL dibela dalam Kandang Panggung Moden. Menghasilkan isi daging kualiti tertinggi yang empuk, tidak berbau Hamis, serta sesuai untuk ibadah Akikah dan Qurban.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3 Information Cards Section -->
+      <section class="detail-info-grid">
+
+        <!-- CARD 1: HARGA -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🏷️</div>
+            <h2 class="info-card-title">HARGA</h2>
+          </div>
+          <div class="price-tag">RM 950.00</div>
+          <div class="price-unit">per seekor (Sedia Akikah / Qurban - 35kg - 45kg)</div>
+          <ul class="info-list" style="margin-top: 1.5rem;">
+            <li class="info-list-item">Anak Kambing Pembiakan (Induk/Pejantan): RM 650.00</li>
+            <li class="info-list-item">Pakej Penyembelihan, Lapah & Penghantaran disediakan</li>
+            <li class="info-list-item">Sijil kesihatan & kebenaran veterinar lengkap</li>
+          </ul>
+        </div>
+
+        <!-- CARD 2: PENJAGAAN -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🩺</div>
+            <h2 class="info-card-title">PENJAGAAN</h2>
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item"><strong>Makanan:</strong> Rumput Napier segar, daun pelepah kelapa sawit, dan palet konsentrat khas.</li>
+            <li class="info-list-item"><strong>Minuman & Garam:</strong> Air bersih dan blok garam mineral suapan setiap hari.</li>
+            <li class="info-list-item"><strong>Pemeriksaan Kesihatan:</strong> Rawatan cacing berkala dan pemotongan kuku setiap 3 bulan.</li>
+            <li class="info-list-item"><strong>Sanitasi Kandang:</strong> Basuhan lantai bertingkat secara rutin untuk mengelakkan kulat.</li>
+          </ul>
+        </div>
+
+        <!-- CARD 3: KAWASAN -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🏡</div>
+            <h2 class="info-card-title">KAWASAN</h2>
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item"><strong>Reka Bentuk Kandang:</strong> Kandang panggung berlantai kayu berjarak untuk kebersihan optimum.</li>
+            <li class="info-list-item"><strong>Keluasan Ruang:</strong> 1.5 - 2.0 meter persegi bagi setiap ekor kambing dewasa.</li>
+            <li class="info-list-item"><strong>Sistem Pengudaraan:</strong> Bumbung tinggi bertekstur sejuk dengan aliran angin silang.</li>
+            <li class="info-list-item"><strong>Padang Ragut:</strong> Kawasan lapang bersaiz sederhana untuk riadah ternakan.</li>
+          </ul>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">ADIRUL</div>
+      <div class="footer-tagline">PERTANIAN & PENTERNAKAN</div>
+      <div class="footer-copyright">
+        © 2026 ADIRUL. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

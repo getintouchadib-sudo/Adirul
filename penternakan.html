@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penternakan - ADIRUL</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo-link">
+        <img src="images/logo.svg" alt="ADIRUL Logo" class="brand-logo-img">
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="pertanian.html" class="nav-link">PERTANIAN</a></li>
+          <li><a href="penternakan.html" class="nav-link active">PENTERNAKAN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+
+      <header class="page-header">
+        <h1 class="page-title">PENTERNAKAN</h1>
+        <p class="page-subtitle">
+          Menyediakan bekalan ternakan sihat, baka berkualiti tinggi, serta pengurusan ladang penternakan yang moden dan patuh syariah.
+        </p>
+      </header>
+
+      <div class="horizontal-rows-list">
+
+        <!-- ROW 1: Penternakan Ayam (Image Left, Text Right) -->
+        <article class="row-item">
+          <div class="row-image-col">
+            <img src="images/penternakan-ayam.jpg" alt="Penternakan Ayam">
+          </div>
+          <div class="row-text-col">
+            <h2>
+              <a href="penternakan-ayam.html" class="row-item-title-link">PENTERNAKAN AYAM</a>
+            </h2>
+            <p class="row-item-desc">
+              Bekalan ayam kampung dan ayam daging berkualiti tinggi yang dipelihara secara sihat dalam persekitaran terkawal. Sumber protein utama yang segar dan dijamin halal.
+            </p>
+          </div>
+        </article>
+
+        <!-- ROW 2: Penternakan Kambing (Text Left, Image Right - Reversed) -->
+        <article class="row-item reverse">
+          <div class="row-text-col">
+            <h2>
+              <a href="penternakan-kambing.html" class="row-item-title-link">PENTERNAKAN KAMBING</a>
+            </h2>
+            <p class="row-item-desc">
+              Kambing baka pilihan (Boer, Jamnapari, Biri-biri) untuk tujuan akikah, qurban, dan pembiakan. Dijaga rapi dengan pemakanan dedak berprotein dan rumput segar.
+            </p>
+          </div>
+          <div class="row-image-col">
+            <img src="images/penternakan-kambing.jpg" alt="Penternakan Kambing">
+          </div>
+        </article>
+
+        <!-- ROW 3: Penternakan Lembu (Image Left, Text Right) -->
+        <article class="row-item">
+          <div class="row-image-col">
+            <img src="images/penternakan-lembu.jpg" alt="Penternakan Lembu">
+          </div>
+          <div class="row-text-col">
+            <h2>
+              <a href="penternakan-lembu.html" class="row-item-title-link">PENTERNAKAN LEMBU</a>
+            </h2>
+            <p class="row-item-desc">
+              Lembu pedaging dan tenusu gred premium dengan rekod kesihatan dan imunisasi yang lengkap. Pilihan utama untuk perayaan, bekalan daging segar, dan industri tenusu.
+            </p>
+          </div>
+        </article>
+
+        <!-- ROW 4: Penternakan Itik (Text Left, Image Right - Reversed) -->
+        <article class="row-item reverse">
+          <div class="row-text-col">
+            <h2>
+              <a href="penternakan-itik.html" class="row-item-title-link">PENTERNAKAN ITIK</a>
+            </h2>
+            <p class="row-item-desc">
+              Itik telur dan itik penelur berkualiti tinggi yang menghasilkan telur asin gred A serta daging itik segar untuk pasaran tempatan dan restoran.
+            </p>
+          </div>
+          <div class="row-image-col">
+            <img src="images/penternakan-itik.jpg" alt="Penternakan Itik">
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">ADIRUL</div>
+      <div class="footer-tagline">PERTANIAN & PENTERNAKAN</div>
+      <div class="footer-copyright">
+        © 2026 ADIRUL. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

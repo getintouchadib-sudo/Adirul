@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertanian - ADIRUL</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo-link">
+        <img src="images/logo.svg" alt="ADIRUL Logo" class="brand-logo-img">
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="pertanian.html" class="nav-link active">PERTANIAN</a></li>
+          <li><a href="penternakan.html" class="nav-link">PENTERNAKAN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+
+      <header class="page-header">
+        <h1 class="page-title">PERTANIAN</h1>
+        <p class="page-subtitle">
+          Peneraju dalam bekalan dan pengurusan pokok buah-buahan berkualiti tinggi untuk hasil pertanian yang optimum dan mampan.
+        </p>
+      </header>
+
+      <div class="horizontal-rows-list">
+
+        <!-- ROW 1: Pokok Jambu (Image Left, Text Right) -->
+        <article class="row-item">
+          <div class="row-image-col">
+            <img src="images/pokok-jambu.jpg" alt="Pokok Jambu">
+          </div>
+          <div class="row-text-col">
+            <h2>
+              <a href="pokok-jambu.html" class="row-item-title-link">POKOK JAMBU</a>
+            </h2>
+            <p class="row-item-desc">
+              Pokok jambu batu premium yang menghasilkan buah ranum, manis, dan kaya dengan vitamin C. Sesuai untuk ladang komersial mahupun tanaman laman rumah.
+            </p>
+          </div>
+        </article>
+
+        <!-- ROW 2: Pokok Mangga (Text Left, Image Right - Reversed) -->
+        <article class="row-item reverse">
+          <div class="row-text-col">
+            <h2>
+              <a href="pokok-mangga.html" class="row-item-title-link">POKOK MANGGA</a>
+            </h2>
+            <p class="row-item-desc">
+              Varieti mangga berkualiti tinggi dengan isi tebal dan manis berkrim. Pokok matang tahan penyakit dan memberikan hasil tuaian yang melimpah.
+            </p>
+          </div>
+          <div class="row-image-col">
+            <img src="images/pokok-mangga.jpg" alt="Pokok Mangga">
+          </div>
+        </article>
+
+        <!-- ROW 3: Pokok Kelapa (Image Left, Text Right) -->
+        <article class="row-item">
+          <div class="row-image-col">
+            <img src="images/pokok-kelapa.jpg" alt="Pokok Kelapa">
+          </div>
+          <div class="row-text-col">
+            <h2>
+              <a href="pokok-kelapa.html" class="row-item-title-link">POKOK KELAPA</a>
+            </h2>
+            <p class="row-item-desc">
+              Pokok kelapa pandan dan komersial yang berbuah lebat dengan air manis menyegarkan. Pilihan terbaik bagi pelaburan jangka panjang sektor pertanian.
+            </p>
+          </div>
+        </article>
+
+        <!-- ROW 4: Pokok Pisang (Text Left, Image Right - Reversed) -->
+        <article class="row-item reverse">
+          <div class="row-text-col">
+            <h2>
+              <a href="pokok-pisang.html" class="row-item-title-link">POKOK PISANG</a>
+            </h2>
+            <p class="row-item-desc">
+              Benih pokok pisang pilihan yang tumbuh pantas dan menghasilkan tandan besar. Ideal untuk pasaran tempatan dan pemprosesan makanan.
+            </p>
+          </div>
+          <div class="row-image-col">
+            <img src="images/pokok-pisang.jpg" alt="Pokok Pisang">
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">ADIRUL</div>
+      <div class="footer-tagline">PERTANIAN & PENTERNAKAN</div>
+      <div class="footer-copyright">
+        © 2026 ADIRUL. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

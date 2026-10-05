@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokok Jambu - ADIRUL Pertanian</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo-link">
+        <img src="images/logo.svg" alt="ADIRUL Logo" class="brand-logo-img">
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="pertanian.html" class="nav-link active">PERTANIAN</a></li>
+          <li><a href="penternakan.html" class="nav-link">PENTERNAKAN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Back Button -->
+      <div style="margin-bottom: 2rem;">
+        <a href="pertanian.html" class="back-button">← KEMBALI KE PERTANIAN</a>
+      </div>
+
+      <!-- Detail Hero Section -->
+      <section class="detail-hero">
+        <div class="detail-hero-image">
+          <img src="images/pokok-jambu.jpg" alt="Pokok Jambu">
+        </div>
+        <div class="detail-hero-content">
+          <h1 class="detail-title">POKOK JAMBU</h1>
+          <p class="detail-intro">
+            Pokok Jambu ADIRUL disemai daripada klon unggul yang terbukti menghasilkan buah berisipadu tinggi, rangup, dan manis. Pokok ini sangat tahan lasak dan sesuai untuk pelbagai jenis tanah tropika.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3 Information Cards Section -->
+      <section class="detail-info-grid">
+
+        <!-- CARD 1: HARGA -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🏷️</div>
+            <h2 class="info-card-title">HARGA</h2>
+          </div>
+          <div class="price-tag">RM 35.00</div>
+          <div class="price-unit">per anak pokok / polibeg matang</div>
+          <ul class="info-list" style="margin-top: 1.5rem;">
+            <li class="info-list-item">Benih kahwin berkualiti tinggi (1.5 - 2 kaki)</li>
+            <li class="info-list-item">Diskaun khas untuk pembelian pukal ladang (>50 pokok)</li>
+            <li class="info-list-item">Jaminan penggantian pokok dalam tempoh 14 hari</li>
+          </ul>
+        </div>
+
+        <!-- CARD 2: PENJAGAAN -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🌱</div>
+            <h2 class="info-card-title">PENJAGAAN</h2>
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item"><strong>Penyiraman:</strong> 1 - 2 kali sehari pada peringkat awal; kurangkan apabila pokok matang.</li>
+            <li class="info-list-item"><strong>Pembajaan:</strong> Baja organik NPK 15:15:15 setiap 3 minggu untuk pertumbuhan seawal 6 bulan.</li>
+            <li class="info-list-item"><strong>Cahaya Matahari:</strong> Memerlukan sinar matahari penuh sekurang-kurangnya 6-8 jam sehari.</li>
+            <li class="info-list-item"><strong>Pangkasan:</strong> Cantas dahan tidak produktif untuk pengudaraan dan galakan pembuahan.</li>
+          </ul>
+        </div>
+
+        <!-- CARD 3: KAWASAN -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🗺️</div>
+            <h2 class="info-card-title">KAWASAN</h2>
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item"><strong>Lokasi Sesuai:</strong> Kawasan lapang yang terbuka dan mendapat pendedahan suria yang cukup.</li>
+            <li class="info-list-item"><strong>Jenis Tanah:</strong> Tanah aluvial, tanah liat berpasir dengan saliran air yang baik.</li>
+            <li class="info-list-item"><strong>Suhu & Cuaca:</strong> Suhu tropika 25°C - 35°C dengan tahap kelembapan sederhana.</li>
+            <li class="info-list-item"><strong>Jarak Tanaman:</strong> Jarak disyorkan 4m x 4m antara pokok untuk pembesaran kanopi.</li>
+          </ul>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">ADIRUL</div>
+      <div class="footer-tagline">PERTANIAN & PENTERNAKAN</div>
+      <div class="footer-copyright">
+        © 2026 ADIRUL. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

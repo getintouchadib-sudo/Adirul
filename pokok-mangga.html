@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokok Mangga - ADIRUL Pertanian</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo-link">
+        <img src="images/logo.svg" alt="ADIRUL Logo" class="brand-logo-img">
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+        ☰
+      </button>
+
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li><a href="pertanian.html" class="nav-link active">PERTANIAN</a></li>
+          <li><a href="penternakan.html" class="nav-link">PENTERNAKAN</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Back Button -->
+      <div style="margin-bottom: 2rem;">
+        <a href="pertanian.html" class="back-button">← KEMBALI KE PERTANIAN</a>
+      </div>
+
+      <!-- Detail Hero Section -->
+      <section class="detail-hero">
+        <div class="detail-hero-image">
+          <img src="images/pokok-mangga.jpg" alt="Pokok Mangga">
+        </div>
+        <div class="detail-hero-content">
+          <h1 class="detail-title">POKOK MANGGA</h1>
+          <p class="detail-intro">
+            Pokok Mangga ADIRUL dipilih daripada benih kahwin gred super yang mampu berbuah seawal 2-3 tahun. Menghasilkan buah bercitarasa tinggi dengan aroma harum dan isi tebal berserat halus.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3 Information Cards Section -->
+      <section class="detail-info-grid">
+
+        <!-- CARD 1: HARGA -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🏷️</div>
+            <h2 class="info-card-title">HARGA</h2>
+          </div>
+          <div class="price-tag">RM 48.00</div>
+          <div class="price-unit">per anak pokok / polibeg matang (2 - 3 kaki)</div>
+          <ul class="info-list" style="margin-top: 1.5rem;">
+            <li class="info-list-item">Pokok kahwin tut bersaiz matang & sihat</li>
+            <li class="info-list-item">Penghantaran percuma untuk pembelian 20 pokok ke atas</li>
+            <li class="info-list-item">Termasuk panduan pemakanan & pembajaan percuma</li>
+          </ul>
+        </div>
+
+        <!-- CARD 2: PENJAGAAN -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🌱</div>
+            <h2 class="info-card-title">PENJAGAAN</h2>
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item"><strong>Penyiraman:</strong> Siram seharai sekali pada waktu pagi. Elakkan takungan air berlebihan.</li>
+            <li class="info-list-item"><strong>Pembajaan:</strong> Baja organik serta NPK Khas Buah semasa fasa pengeluaran bunga.</li>
+            <li class="info-list-item"><strong>Cahaya Matahari:</strong> Memerlukan pendedahan terus cahaya matahari sepanjang hari.</li>
+            <li class="info-list-item"><strong>Kawalan Perosak:</strong> Semburan cuka kayu atau racun organik mengikut keperluan.</li>
+          </ul>
+        </div>
+
+        <!-- CARD 3: KAWASAN -->
+        <div class="info-card">
+          <div class="info-card-header">
+            <div class="info-card-icon">🗺️</div>
+            <h2 class="info-card-title">KAWASAN</h2>
+          </div>
+          <ul class="info-list">
+            <li class="info-list-item"><strong>Lokasi Sesuai:</strong> Tanah pamah atau bukit dengan pendedahan angin sederhana.</li>
+            <li class="info-list-item"><strong>Jenis Tanah:</strong> Tanah gembur berpasir dengan pH 5.5 - 7.0 yang kaya bahan organik.</li>
+            <li class="info-list-item"><strong>Suhu & Cuaca:</strong> Iklim panas dan bersuhu antara 27°C hingga 36°C.</li>
+            <li class="info-list-item"><strong>Jarak Tanaman:</strong> Jarak ideal 6m x 6m untuk mengelakkan perebutan nutrisi.</li>
+          </ul>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">ADIRUL</div>
+      <div class="footer-tagline">PERTANIAN & PENTERNAKAN</div>
+      <div class="footer-copyright">
+        © 2026 ADIRUL. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
